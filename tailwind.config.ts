@@ -88,7 +88,7 @@ export default {
 		},
 		maxWidth: {
 			'1280px': '1280px',
-		  },
+		},
   	}
   },
     plugins: [

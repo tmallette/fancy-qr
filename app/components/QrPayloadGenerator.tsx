@@ -31,8 +31,8 @@ export default function QrPayloadGenerator({onChange,details,setData}: QrPayload
     return code;
   };
 
-  const handleQRDetailChange = (target: string, value: any) => {
-    setQRPayloadDetails((prev: any) => ({ ...prev, [target]: value }));
+  const handleQRDetailChange = (target: string, value: string | boolean) => {
+    setQRPayloadDetails((prev) => ({ ...prev, [target]: value }));
   };
 
   useEffect(() => {

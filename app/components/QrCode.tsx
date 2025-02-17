@@ -181,7 +181,7 @@ export default function QrCode() {
 
   }, [qrData]);
 
-  const handleQRChange = (target: string, value: any) => {
+  const handleQRChange = (target: string, value: string | number[]) => {
     setQRData((prev) => ({ ...prev, [target]: value }));
   };
 
